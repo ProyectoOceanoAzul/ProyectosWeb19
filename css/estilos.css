@@ -1,0 +1,948 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    
+    /*    
+        outline: 1px solid red;
+    */
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+
+    /*
+    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
+    */
+
+    /*Estilo 1 de parrafo*/
+    font-family: "Montserrat", sans-serif;
+
+
+    background-color: var(--colorEstilo1);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+
+    --colorEstilo1:#FFFFFF;
+    --colorEstilo2:#F9F9F9;
+    --colorEstilo3:#000000;
+
+    --colorEstilo4:#0A0B45;
+    --colorEstilo5:#3B00EE;
+    --colorEstilo6:#7B00EB;
+    --colorEstilo7:#E000EA;
+    --colorEstilo8:#F5B637;
+    
+}
+
+
+/*Estilos genraels*/
+
+h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 4.5rem;    
+    text-align: left;
+    font-weight: 400;
+}
+
+
+h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--colorEstilo1);    
+}
+
+a:hover{    
+    text-decoration: line-through;
+}
+
+
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 10px 0;
+}
+
+
+/*contenedor*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 10px;
+
+
+    overflow: auto; /********************************/
+}
+
+
+nav.contenedor__superior{
+    overflow: auto;
+    background-color: var(--colorEstilo4);
+    color: var(--colorEstilo1);
+}
+
+div.superior__logo{
+    float: left;
+}
+
+div.superior__menu{
+    float: right;
+}
+
+div.superior__menu ul.menu__opciones{
+    list-style: none;
+}
+
+
+div.superior__menu ul.menu__opciones li{
+    float: left;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+
+div.superior__logo h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+/***************************************************/
+/*contenedor__banner*/
+section.contenedor__banner{
+    background: linear-gradient(to right, var(--colorEstilo7), var(--colorEstilo5));
+    color: var(--colorEstilo1);
+
+
+    overflow: auto;
+    height: 100%;
+    padding: 200px 0;
+}
+
+
+div.banner__lado1{
+    float: left;
+    width: 50%;
+}
+
+
+div.banner__lado2{
+    float: right;
+    width: 50%;
+}
+
+div.banner__lado2 img{
+    width: 100%;
+}
+
+div.banner__lado2 img:hover{
+    opacity: 0.7;
+}
+
+
+
+div.banner__lado1 p{
+    padding: 20px 0;
+}
+
+div.banner__lado1 h2.titulo span{
+    color: var(--colorEstilo8);
+}
+
+
+div.banner__lado1 a{
+    display: inline-block;
+    background-color: var(--colorEstilo8);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+div.banner__lado1 a:hover{
+    text-decoration: none;
+    
+    background-color: var(--colorEstilo1);
+    color: var(--colorEstilo8);
+    font-weight: 500;
+
+}
+
+
+
+/***************************************************/
+/*contenedor__features*/
+section.contenedor__features{    
+    padding: 100px 0;
+    height: 100%;
+}
+
+div.grupo__cards{    
+    padding-top: 70px;    
+}
+
+div.grupo__cards div.card{
+    float: left;
+    width: 25%;
+    padding: 22px;
+    text-align: center;
+}
+
+div.card img:hover{
+    
+    box-shadow: 5px 5px 10px var(--colorEstilo3);
+}
+
+
+
+/***************************************************/
+/*contenedor__features*/
+section.contenedor__testimonial{    
+    padding: 100px 0;
+    height: 100%;
+
+    background-color: var(--colorEstilo4);
+    color: var(--colorEstilo1);
+}
+
+
+section.contenedor__testimonial h4{
+    margin-bottom: 70px;
+}
+
+p.parrafo1{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+p.cliente{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    color: var(--colorEstilo8);
+}
+
+
+
+
+/***************************************************/
+/*contenedor__contact*/
+section.contenedor__contact{    
+    padding: 100px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4{
+    margin-bottom: 70px;
+}
+
+
+
+
+/***************************************************/
+/*contenedor__banner*/
+ form{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+div.form__group{
+    margin-bottom: 1rem ;
+}
+
+form label{
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+    color: var(--colorEstilo3);
+    text-align: left;
+}
+
+.form__control{
+    width: 100%;
+    background-color: #EDEDED;
+    color: var(--colorEstilo3);
+    font-weight: 300;
+    
+}
+
+form input,
+form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea{
+    line-height: 1.4rem;
+}
+
+
+form button{
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--colorEstilo8);
+    color: var(--colorEstilo2);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover{
+    border: 1px solid var(--colorEstilo8);
+    background-color: var(--colorEstilo2);
+    color: var(--colorEstilo8);
+}
+
+
+
+
+/**************************************/
+/*contenedor__footer*/
+footer.contenedor__footer{
+    background-color: var(--colorEstilo4);
+}
+
+div.pie__titulo p{
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    color: var(--colorEstilo2);
+}
+
+span.autor
+{
+    color: var(--colorEstilo2);
+    font-weight: 600;
+}
+
+
+span.donacion a
+{
+    color: var(--colorEstilo2);
+    font-weight: 600;
+
+}
+
+span.donacion a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 575.98px) and
+                        (max-width: 767.98px) and
+                        (max-width: 991.98px) and
+                        (max-width: 1199.98px) and
+                        (max-width: 1399.98px)
+{
+
+
+
+/**************************************/
+/**/
+div.superior__logo{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+div.superior__menu{
+    float: none;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+div.superior__menu ul.menu__opciones li{
+    float: none;
+    width: 100%;
+    padding: 7px;
+}
+
+
+
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+div.banner__lado1{
+    float: none;
+    width: 100%;
+}
+
+div.banner__lado2{
+    float: none;
+    width: 100%;
+}
+
+div.banner__lado1 h2{
+    font-size: 2.5rem;
+}
+
+div.banner__lado2 img{
+    padding: 25px;
+}
+
+
+
+
+/**************************************/
+/**/
+
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+
+div.grupo__cards div.card{
+    float: none;
+    width: 100%;
+    text-align: left;    
+}
+
+div.grupo__cards div.card img{
+    width: 20%;    
+}
+
+div.grupo__cards div.card p{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+section.contenedor__testimonial p{
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+
+section.contenedor__contact form{
+    width: 100%;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 768px)
+{
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+div.banner__lado1 h2{
+    font-size: 3rem;
+}
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+
+div.grupo__cards div.card img{
+    width: 100%;    
+}
+
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 800px)
+{
+    
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+div.banner__lado1 h2{
+    font-size: 3rem;
+}
+
+
+/**************************************/
+/**/
+
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+div.grupo__cards div.card img{
+    width: 100%;    
+}
+
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 834px)
+{
+
+
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+div.banner__lado1 h2{
+    font-size: 3rem;
+}
+
+
+/**************************************/
+/**/
+
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+div.grupo__cards div.card img{
+    width: 100%;    
+}
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 884px)
+{
+
+
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+div.banner__lado1 h2{
+    font-size: 3rem;
+}
+
+
+
+/**************************************/
+/**/
+
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+div.grupo__cards div.card img{
+    width: 100%;    
+}
+
+
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 1114px)
+{
+
+
+/**************************************/
+/**/
+section.contenedor__banner{
+    padding: 60px 0;    
+}
+
+
+div.banner__lado1 h2{
+    font-size: 3rem;
+}
+
+
+/**************************************/
+/**/
+
+section.contenedor__features{
+    padding: 60px 0;
+    height: 100%;
+}
+
+div.grupo__cards {
+  padding-top: 30px;
+}
+
+div.grupo__cards div.card img{
+    width: 100%;    
+}
+
+
+/**************************************/
+/**/
+section.contenedor__testimonial{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__testimonial h4 {
+  margin-bottom: 30px;
+}
+
+
+
+/**************************************/
+/**/
+section.contenedor__contact{
+    padding: 60px 0;
+    height: 100%;
+}
+
+section.contenedor__contact h4 {
+  margin-bottom: 30px;
+}
+
+    
+}
+
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 320px)
+{
+
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+    width: 20%; 
+    
+    }
+    
+}
+
+
+
+/**************************************/
+/*Responsive*/
+@media only screen and  (max-width: 360px)
+{
+
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+        width: 20%;    
+    }
+    
+}
+
+
+
+
+
+
+
