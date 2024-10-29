@@ -513,18 +513,7 @@ section.contenedor__contact form{
 
 
 
-
-
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -532,8 +521,6 @@ section.contenedor__contact form{
 /*Responsive*/
 @media only screen and  (max-width: 768px)
 {
-
-
 
 
 /**************************************/
@@ -944,5 +931,68 @@ section.contenedor__contact h4 {
 
 
 
+
+
+/**************************************/
+/*Responsive*/
+
+
+
+/**************************************/
+/*Responsive*/
+@media screen and  (max-width: 393px)
+{
+    
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+        width: 20%;    
+    }
+}
+
+
+/**************************************/
+/*Responsive*/
+@media screen and  (max-width: 412px)
+{
+
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+        width: 20%;    
+    }
+}
+
+
+/**************************************/
+/*Responsive*/
+@media screen and  (max-width: 414px)
+{
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+        width: 20%;    
+    }
+}
+
+
+/**************************************/
+/*Responsive*/
+@media screen and  (max-width: 428px)
+{
+    div.banner__lado1 h2{
+    font-size: 2.5rem;
+    }
+
+    div.grupo__cards div.card img{
+        width: 20%;    
+    }
+}
 
 
